@@ -1,10 +1,13 @@
 # generator
 > Collection of boilerplate generators
+
 Works on macOS, and probably everywhere else.
+
 ## Install
 ```
 $ yarn add --dev https://github.com/stephan-evers/generator
 ```
+
 ## Usage
 ```
 $ yarn generate --help
