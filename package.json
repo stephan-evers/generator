@@ -1,0 +1,33 @@
+{
+  "name": "generator",
+  "version": "0.1.0",
+  "description": "Collection of boilerplate generators",
+  "license": "MIT",
+  "repository": "stephan-evers/generator",
+  "author": {
+    "name": "stephan-evers",
+    "email": "jimno345@gmail.com",
+    "url": "github.com/stephan-evers"
+  },
+  "engines": {
+		"node": ">=12.13"
+	},
+  "main": "./bin/index.js",
+  "bin": {
+    "generate": "./bin/index.js"
+  },
+  "scripts": {
+    "prebuild": "yarn trash bin/**/*",
+    "build": "yarn parcel build src/index.js -d bin --target node --no-source-maps"
+  },
+  "dependencies": {
+    "command-line-args": "^5.1.1",
+    "make-dir": "^3.1.0",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-shebang": "^1.2.9",
+    "trash-cli": "^3.0.0"
+  }
+}

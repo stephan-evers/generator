@@ -1,0 +1,10 @@
+
+import { customElement, LitElement } from 'lit-element'
+import styles from './styles'
+import template from './template'
+
+@customElement('{{ name }}')
+class PagesDashboard extends LitElement {
+  static get styles() { return styles }
+  render() { return template(this) }
+}
