@@ -11,6 +11,7 @@ $ yarn add --dev https://github.com/stephan-evers/generator
 ## Usage
 ```
 $ yarn generate --help
+
   Usage
     $ generate <generator> […]
 
